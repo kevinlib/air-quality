@@ -1,0 +1,85 @@
+body { 
+    margin:0; font:normal 75% Arial, Helvetica, sans-serif;} 
+canvas { 
+    display: block; vertical-align: bottom; }
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+
+   }
+#top-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        margin-top: 20px; /* Adds 20px margin above the particle canvas container */
+
+    }
+/* ---- particles.js container ---- */
+#particles-js { 
+    position:absolute; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #fcfcfc; 
+    background-image: url(""); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 50% 50%;
+    opacity: 0.9;
+    z-index: 0;
+}
+
+/* ---- stats.js ---- */ 
+.count-particles { 
+        background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } 
+.js-count-particles{ font-size: 1.1em; } 
+#stats, .count-particles{
+    -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } 
+#stats{ 
+    border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
+
+#reading-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #fffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 2em;
+    flex-direction: column;
+    position: absolute;
+    z-index: 0; /* Below the particles */
+    pointer-events: none; /* Ignore mouse events */
+}
+
+#latest-timestamp {
+    font-size: 0.8em;
+    margin-bottom: 20px;
+}
+.reading-value {
+    font-size: 5em;
+    line-height: 1;
+}
+.reading-unit {
+    font-size: 1em;
+    line-height: 1;
+}
+/* Bottom container for Trend Chart */
+#bottom-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin-top: 60px;
+    justify-content: center; /* Center the chart horizontally */
+    align-items: center; /* Center the chart vertically */
+    z-index: 0;
+}
+
+/* Trend Chart */
+#trendChart {
+    max-width: 100%; /* Ensure it doesn't exceed the container's width */
+    height: auto; /* Maintain aspect ratio */
+}

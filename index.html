@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM2.5 Data Visualization</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/moment@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- particles.js container -->
+    <!-- Container for Particle.js and reading circle -->
+    <div id="top-container">
+        <h1>Latest PM2.5 Reading: 85th St and Columbus Ave</h1>
+        <div id="particles-js"></div>
+        <div id="reading-circle">
+            <div id="latest-timestamp"></div>
+            <span id="reading-value" class="reading-value"></span>
+            <span class="reading-unit">µg/m^3</span>
+        </div>
+    </div>
+     <!-- Container for Trend Chart -->
+     <div id="bottom-container">
+        <h1>Monthly Readings</h1>
+        <canvas id="trendChart" width="400" height="200"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- particles.js lib -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib
+    <script src="http://threejs.org/examples/js/libs/stats.min.js">
+    </script> -->
+
+</body>
+</html>
