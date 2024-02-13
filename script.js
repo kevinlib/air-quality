@@ -36,7 +36,7 @@ function createApiUrl() {
     const dateTo = formatDate(currentDate) + 'T23:59:59';
 
     // Construct and return the API URL
-    return `https://api.openaq.org/v2/measurements?location_id=334672&parameter=pm25&date_from=${dateFrom}T00:00:00&date_to=${dateTo}T23:59:59&limit=1000`;
+    return `https://api.openaq.org/v2/measurements?location_id=1427215&parameter=pm25&date_from=${dateFrom}T00:00:00&date_to=${dateTo}T23:59:59&limit=1000`;
 }
     
 function formatDate(date) {
